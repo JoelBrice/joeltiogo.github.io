@@ -1,52 +1,36 @@
 *{
-    width: 100;
     padding: 0;
     margin: 0;
 }
-.container{
-    flex-direction: row;
-}
-.profile img{
-    width: 170px;
-    height: 170px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.summary{
-    display: inline-block;
-    border: 1px solid #15314d ;
-    background-color: #696965;
-    color: aliceblue;    
-    min-height: 50px;
-    padding: 5px;
-    position: absolute;
-    margin-top: 80px;
-    margin-left: 10%;
-    margin-right: 20px;
-}
-hr{
-    margin: 30px;
-}
-.section{
-    min-height: 50px;
-    margin-left: 30px;
-}
+
+
 .nav-items{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
+    padding: 5px;
+}
+.nabar-content{
+    text-align: center;
+    justify-content: center;
 }
 .navbar ul li{
     list-style-type: none;
-    margin: 10px;
-    padding: 5px;
-    color: #fffffffd;
+    padding: 8px;
+    color: #ffffff;
+    margin: 5px;
+    background-color: #2a947d;
+}
+.navbar ul li:hover, .navbar ul li:focus, .navbar ul li:active{
+    background-color: #36d191;
 }
 ul li a{
     text-decoration: none;
+    color: #ffffff;
 }
 
 .navbar{
     background-color: #15314d;
+    text-align: right;
 }
 
 @media (max-width: 600px) {
@@ -56,13 +40,8 @@ ul li a{
     }
 
     .summary{
-        display: block;
-        border: 1px solid #15314d ;
-        background-color: #696965;
-        color: #ffffff; 
-        padding: 2px;
-        position: relative;
         margin: 10px;
+        font-size: 14px !important;
     }
 
     .hamburger-icon {
@@ -78,3 +57,47 @@ ul li a{
         cursor: pointer;
       }
   }
+.container{
+    flex-direction: row;
+}
+.navbar{
+    text-align: center !important;
+}
+.profile{
+    justify-content: center;
+    text-align: center;
+}
+.profile img{
+    width: 170px;
+    height: 170px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.work{
+    margin: 10px;
+}
+.work a{
+    text-decoration: none;
+}
+.work h3 a{
+    color: #3E8D35;
+}
+.summary{
+    display: block;
+    border: 1px solid #15314d ;
+    background-color: #696965;
+    color: aliceblue;  
+    padding: 5px;
+    margin-left: 10%;
+    margin-right:10%;
+    text-align: center;
+    font-size: 22px;
+}
+hr{
+    margin: 5px 20px 5px 20px;
+}
+.interests, .skills, .contact{
+    margin-left: 40px;
+    padding: 10px;
+}
