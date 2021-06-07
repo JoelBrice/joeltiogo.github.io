@@ -4,65 +4,10 @@
 }
 
 
-.nav-items{
-    display: inline-flex;
-    flex-direction: row;
-    padding: 5px;
-}
-.nabar-content{
-    text-align: center;
-    justify-content: center;
-}
-.navbar ul li{
-    list-style-type: none;
-    padding: 8px;
-    color: #ffffff;
-    margin: 5px;
-    background-color: #2a947d;
-}
 .navbar ul li:hover, .navbar ul li:focus, .navbar ul li:active{
     background-color: #36d191;
 }
-ul li a{
-    text-decoration: none;
-    color: #ffffff;
-}
 
-.navbar{
-    background-color: #15314d;
-    text-align: right;
-}
-
-@media (max-width: 600px) {
-    .navbar {
-        visibility: hidden;
-        display: block;
-    }
-
-    .summary{
-        margin: 10px;
-        font-size: 14px !important;
-    }
-
-    .hamburger-icon {
-        position: fixed;
-        /* keep the hamburger button above everything */
-        z-index: 100;
-        top: 1rem;
-        right: 1rem;
-        width: 3rem;
-        height: 3rem;
-        border: black solid 1px;
-        background: white;
-        cursor: pointer;
-      }
-  }
-.container{
-    flex-direction: row;
-}
-.navbar{
-    text-align: center !important;
-}
 .profile{
     justify-content: center;
     text-align: center;
