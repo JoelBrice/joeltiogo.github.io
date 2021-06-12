@@ -1,48 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo:wght@100&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,500;1,600;1,700&family=Monoton&family=Parisienne&family=Play:wght@400;700&family=Press+Start+2P&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+font-family: 'Exo', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Monoton', cursive;
+font-family: 'Play', sans-serif;
 }
 
 
 .navbar ul li:hover, .navbar ul li:focus, .navbar ul li:active{
     background-color: #36d191;
 }
+.navbar-collapse{
+    justify-content: flex-end;
+}
 
-.profile{
-    justify-content: center;
+.card{
     text-align: center;
 }
-.profile img{
+.profile-pic{
+    
+    text-align: center;
+    display: block;
+}
+.profile-pic img{
     width: 170px;
     height: 170px;
-    margin-left: 20px;
     margin-top: 10px;
+    border-radius: 50%;
+    padding: 0;
 
 }
-.work{
-    margin: 10px;
+.name{
+    font-family: 'Press Start 2P', cursive;
 }
-.work a{
+ a{
     text-decoration: none;
 }
-.work h3 a{
-    color: #3E8D35;
-}
-.summary{
-    display: block;
-    border: 1px solid #15314d ;
-    background-color: #696965;
-    color: aliceblue;  
-    padding: 5px;
-    margin-left: 10%;
-    margin-right:10%;
-    text-align: center;
-    font-size: 22px;
-}
-hr{
-    margin: 5px 20px 5px 20px;
-}
-.interests, .skills, .contact{
-    margin-left: 40px;
-    padding: 10px;
+
+.accordion-body{
+    font-weight: 200;
 }
