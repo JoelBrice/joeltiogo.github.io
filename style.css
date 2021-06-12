@@ -26,6 +26,7 @@ font-family: 'Play', sans-serif;
     text-align: center;
     display: block;
 }
+
 .profile-pic img{
     width: 170px;
     height: 170px;
@@ -43,4 +44,12 @@ font-family: 'Play', sans-serif;
 
 .accordion-body{
     font-weight: 200;
+}
+form{
+    width: 400px;
+    height: 400px;
+}
+.form-contact{
+    text-align: center;
+    display: block;
 }
