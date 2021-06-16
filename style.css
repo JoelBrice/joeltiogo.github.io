@@ -57,3 +57,7 @@ form{
 #projects{
     margin-top: -20%;
 }
+#summary{
+    background: url("./assets/images/binary.jpg") no-repeat !important;
+    color: azure;
+}
