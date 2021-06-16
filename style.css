@@ -53,3 +53,7 @@ form{
     text-align: center;
     display: block;
 }
+
+#projects{
+    margin-top: -20%;
+}
