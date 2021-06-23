@@ -11,16 +11,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand text-warning" href="./index.html">
                 <!-- <img src="./assets/images/photo.jpg" alt=""> -->
-                Joel Tiogo
+                JOEL TIOGO
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -28,43 +30,57 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./hire.html">Hire me</a>
+                        <a class="nav-link" href="./contact.html">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact</a>
+                        <a class="nav-link" href="./hire.html">HIRE ME</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="form-contact container">
-        <form class="form-group">
-            <h1 class="h3 mb-3 fw-normal text-center">Contact me</h1>
 
-            <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Joe">
-                <label for="floatingInput">Name</label>
+    <div class="container">
+        <section class="section1">
+            <div class="sec1title">
+                <h1>Get in touch</h1>
             </div>
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="email@mail.com">
-                <label for="floatingInput"> Email Address</label>
+        </section>
+        <section class="section2">
+            <div class="contactform">
+                <h5>Drop us a line...</h5>
+                <form action="#">
+                    <label for="firstname">
+                        <i class="cntfrmicn fa fa-user"></i>
+                        <input name="firstname" class="form-fields" type="text">
+                    </label>
+                    <label for="email">
+                        <i class="cntfrmicn fa fa-envelope"></i>
+                        <input name="email" class="form-fields" type="text">
+                    </label>
+                    <label for="contact">
+                        <span class="material-icons-outlined">
+                            phone_in_talk
+                        </span>
+                        <input name="contact" class="form-fields" type="text">
+                    </label>
+                    <label for="textarea">
+                        <i class="cntfrmicn fa fa-comment"></i>
+                        <textarea class="form-fields" name="textarea" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <button class="form-fields button" value="Send" type="submit">Send <i
+                            class="fa fa-paper-plane"></i></button>
+                </form>
             </div>
-            <div class="form-floating">
-                <textarea type="text" class="form-control" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea"> Message </label>
-            </div>
-            <div class="py-3 text-center"> <button class="btn btn-md btn-outline-success" type="submit">Send
-                    message</button>
-            </div>
-        </form>
+        </section>
     </div>
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container text-center">

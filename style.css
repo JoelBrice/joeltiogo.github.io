@@ -1,63 +1,299 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo:wght@100&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,500;1,600;1,700&family=Monoton&family=Parisienne&family=Play:wght@400;700&family=Press+Start+2P&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
-font-family: 'Exo', sans-serif;
-font-family: 'IBM Plex Serif', serif;
-    font-family: 'Black Ops One', cursive;
-    font-family: 'Monoton', cursive;
-font-family: 'Play', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Play', sans-serif;
 }
 
 
-.navbar ul li:hover, .navbar ul li:focus, .navbar ul li:active{
+.navbar ul li:hover,
+.navbar ul li:focus,
+.navbar ul li:active {
     background-color: #36d191;
 }
-.navbar-collapse{
-    justify-content: flex-end;
+
+.nav-link{
+    color: #fefefe !important;
+    font-size: 20px;
 }
 
-.card{
+.navbar-collapse {
+    justify-content: center;
+}
+
+.card {
     text-align: center;
 }
-.profile-pic{
-    
+
+.profile-pic {
+
     text-align: center;
     display: block;
 }
 
-.profile-pic img{
-    width: 170px;
-    height: 170px;
-    margin-top: 10px;
+.profile-pic img {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     padding: 0;
 
 }
-.name{
-    font-family: 'Press Start 2P', cursive;
+
+.name {
+    font-family: 'IBM Plex Serif', serif;
 }
- a{
+
+a {
     text-decoration: none;
 }
 
-.accordion-body{
-    font-weight: 200;
-}
-form{
+form {
     width: 400px;
     height: 400px;
 }
-.form-contact{
+
+.form-contact {
     text-align: center;
     display: block;
 }
 
-#projects{
-    margin-top: -20%;
+#projects {
+    margin-top: -70%;
 }
-#summary{
-    background: url("./assets/images/binary.jpg") no-repeat !important;
-    color: azure;
+
+.summary {
+    background: url("./assets/images/binary.jpg") no-repeat;
+    display: block;
+}
+
+.intro {
+    display: block;
+    background-color: #e5e8eb;
+}
+
+.no-js #experience-timeline>div {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dcd9d9
+}
+
+.no-js #experience-timeline>div h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #374054;
+    display: inline-block;
+    margin: 0
+}
+
+.no-js #experience-timeline>div h4 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #7e8890;
+    margin: 0 0 15px 0
+}
+
+.no-js #experience-timeline>div p {
+    color: #74808a;
+    font-size: 0.9em;
+    margin: 0
+}
+
+.no-js #experience-timeline:before,
+.no-js #experience-timeline:after {
+    content: none
+}
+
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+
+
+
+footer {
+    padding: 50px 0
+}
+
+.copyright {
+    padding-top: 20px
+}
+
+.copyright p {
+    margin: 0;
+    color: #74808a
+}
+
+.top {
+    text-align: center
+}
+
+.top span {
+    cursor: pointer;
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #b9bfc4;
+    text-align: center
+}
+
+.top i {
+    color: #74808a
+}
+
+.social {
+    text-align: right
+}
+
+.social ul {
+    margin: 5px 0 0 0;
+    padding: 0
+}
+
+.social li {
+    display: inline-block;
+    font-size: 1.25em;
+    list-style: none
+}
+
+.social a {
+    display: block;
+    color: #74808a;
+    padding: 10px
+}
+
+.social a:hover {
+    color: #3498db
+}
+
+
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    50% {
+        transform: scale(1.2, 1.2)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+#experience {
+    padding: 50px 15px;
+    text-align: center;
+    border-bottom: 1px solid #dcd9d9
+}
+
+#experience h2 {
+    color: #374054
+}
+
+#experience-timeline {
+    margin: 10px auto 0 auto;
+    position: relative;
+    max-width: 1000px
+}
+
+#experience-timeline:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 303px;
+    right: auto;
+    height: 100%;
+    width: 3px;
+    background: #3498db;
+    z-index: 0
+}
+
+#experience-timeline:after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 40px;
+    background: #3498db;
+    background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+    top: 100%;
+    left: 303px
+}
+
+.vtimeline-content {
+    margin-left: 350px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    border-radius: 3px;
+    text-align: left
+}
+
+.vtimeline-content h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #374054;
+    display: inline-block;
+    margin: 0
+}
+
+.vtimeline-content h4 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #7e8890;
+    margin: 0 0 15px 0
+}
+
+.vtimeline-content p {
+    color: #74808a;
+    font-size: 0.9em;
+    margin: 0
+}
+
+
+.vtimeline-point {
+    position: relative;
+    display: flexbox;
+    vertical-align: top;
+    margin-bottom: 30px
+}
+
+.vtimeline-icon {
+    position: relative;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: #3498db;
+    border-radius: 50%;
+    float: left;
+    z-index: 99;
+    margin-left: 280px
+}
+
+.vtimeline-icon i {
+    display: block;
+    font-size: 2em;
+    margin-top: 10px
+}
+
+.vtimeline-date {
+    width: 260px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-weight: 300;
+    color: #374054
 }
