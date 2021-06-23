@@ -1,3 +1,3 @@
 $(document).ready(function () {
-  $(".summary").fadeIn(100);
+  document.getElementsByClassName("summary").fadeIn(1000);
 });
